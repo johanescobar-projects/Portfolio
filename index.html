@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Johan Escobar — Científico de Datos</title>
+<title>Johan Escobar — Estadístico </title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -329,7 +329,7 @@
     <div class="hero-tag">Disponible para nuevas oportunidades</div>
     <h1>Johan<br><em>Escobar</em></h1>
     <p class="hero-sub">
-      Científico de Datos & Estadístico. Especializado en modelación predictiva, 
+      Científico de Datos & Estadístico. Con interés y experiencia en modelación predictiva, 
       machine learning y análisis riguroso de datos para la toma de decisiones.
     </p>
     <div class="hero-cta">
@@ -370,7 +370,6 @@
           <div class="contact-item">📍 Bogotá, Colombia</div>
           <div class="contact-item">✉️ <a href="mailto:johanescobar770@gmail.com">johanescobar770@gmail.com</a></div>
           <div class="contact-item">📱 3123196360</div>
-          <div class="contact-item">🔗 <a href="https://linkedin.com/in/johanescobar" target="_blank">linkedin.com/in/johanescobar</a></div>
         </div>
       </div>
       <div>
@@ -475,61 +474,111 @@
 </section>
 
 <!-- PROYECTOS -->
+<!-- CASO DE ESTUDIO -->
 <section id="proyectos">
   <div class="container">
-    <p class="section-label">Portfolio</p>
-    <h2 class="section-title">Proyectos <em>destacados</em></h2>
+    <p class="section-label">Caso de estudio</p>
+    <h2 class="section-title">SMOTE y variantes en <em>clasificación desbalanceada</em></h2>
     <div class="divider"></div>
-    <div class="projects-grid">
-      <div class="project-card">
-        <div class="project-header">
-          <div class="project-num">01</div>
-        </div>
-        <div class="project-body">
-          <h3>Clasificación de riesgo crediticio con datos desbalanceados</h3>
-          <p>Comparación de clasificadores supervisados bajo distintas condiciones de desbalance de clases. Evaluación con AUC-ROC, F1 e índice de Youden para definición de umbral óptimo.</p>
-          <div class="project-tags">
-            <span class="project-tag">Python</span>
-            <span class="project-tag">scikit-learn</span>
-            <span class="project-tag">AUC-ROC</span>
-            <span class="project-tag">Youden</span>
-          </div>
-        </div>
+
+    <div class="case-study">
+      <p class="case-lead">
+        Estudio aplicado sobre el efecto de SMOTE, Borderline-SMOTE y ADASYN en modelos MLP para problemas de clasificación desbalanceada.
+        El análisis integra escenarios de riesgo crediticio, deserción escolar y fraude bancario, junto con pruebas de robustez y sensibilidad.
+      </p>
+
+      <div class="case-tags">
+        <span class="case-tag">Python</span>
+        <span class="case-tag">scikit-learn</span>
+        <span class="case-tag">SMOTE</span>
+        <span class="case-tag">Borderline-SMOTE</span>
+        <span class="case-tag">ADASYN</span>
+        <span class="case-tag">MLP</span>
+        <span class="case-tag">AUC-ROC</span>
+        <span class="case-tag">F1-score</span>
+        <span class="case-tag">Índice de Youden</span>
       </div>
-      <div class="project-card">
-        <div class="project-header">
-          <div class="project-num">02</div>
-        </div>
-        <div class="project-body">
-          <h3>Detección de deserción escolar con machine learning</h3>
-          <p>Modelación predictiva de riesgo de deserción en instituciones educativas. Aplicación de early stopping y métricas de evaluación avanzadas para optimizar el modelo final.</p>
-          <div class="project-tags">
-            <span class="project-tag">Python</span>
-            <span class="project-tag">Redes neuronales</span>
-            <span class="project-tag">Early stopping</span>
-            <span class="project-tag">F1-score</span>
+
+      <div class="case-grid">
+        <article class="case-box">
+          <h3>1. Objetivo</h3>
+          <p>
+            Evaluar cómo cambian el desempeño y la estabilidad de una red neuronal multicapa al aplicar técnicas de sobremuestreo
+            en escenarios con fuerte desbalance de clases.
+          </p>
+        </article>
+
+        <article class="case-box">
+          <h3>2. Metodología</h3>
+          <ul>
+            <li>Construcción de pipelines de preprocesamiento y entrenamiento.</li>
+            <li>Comparación entre datos originales y datos remuestreados.</li>
+            <li>Evaluación con AUC-ROC, F1-score, matriz de confusión e índice de Youden.</li>
+            <li>Análisis de robustez mediante múltiples semillas y sensibilidad a k.</li>
+          </ul>
+        </article>
+
+        <article class="case-box case-box-wide">
+          <h3>3. Escenarios analizados</h3>
+          <div class="scenario-grid">
+            <div class="scenario-card">
+              <h4>Riesgo crediticio</h4>
+              <img src="assets/credito_comparacion.png" alt="Comparación de métricas para riesgo crediticio">
+              <p>
+                Comparación de modelos bajo desbalance de clases para evaluar el efecto de cada técnica de sobremuestreo.
+              </p>
+            </div>
+
+            <div class="scenario-card">
+              <h4>Deserción escolar</h4>
+              <img src="assets/desercion_k.png" alt="Sensibilidad a k en deserción escolar">
+              <p>
+                Análisis de sensibilidad del desempeño del modelo frente a variaciones en k y en el criterio de decisión.
+              </p>
+            </div>
+
+            <div class="scenario-card">
+              <h4>Fraude bancario</h4>
+              <img src="assets/fraude_pr_roc.png" alt="Curvas ROC y Precision-Recall para fraude bancario">
+              <p>
+                Evaluación del comportamiento del modelo en un contexto de clases altamente desbalanceadas y priorización de falsos positivos.
+              </p>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="project-card">
-        <div class="project-header">
-          <div class="project-num">03</div>
-        </div>
-        <div class="project-body">
-          <h3>Detección de fraude bancario</h3>
-          <p>Pipeline completo de preprocesamiento y evaluación de modelos de clasificación para detección de transacciones fraudulentas en escenarios de clases altamente desbalanceadas.</p>
-          <div class="project-tags">
-            <span class="project-tag">Python</span>
-            <span class="project-tag">Pipeline</span>
-            <span class="project-tag">Precisión-Recall</span>
-            <span class="project-tag">SQL</span>
+        </article>
+
+        <article class="case-box">
+          <h3>4. Robustez y análisis adicional</h3>
+          <p>
+            Se incluyeron repeticiones con distintas semillas para verificar estabilidad del rendimiento y se compararon variaciones
+            en las métricas al cambiar la estrategia de remuestreo.
+          </p>
+        </article>
+
+        <article class="case-box">
+          <h3>5. Fundamento teórico</h3>
+          <p>
+            El estudio también incorpora proposiciones sobre SMOTE y su relación con la generación de muestras sintéticas,
+            con el fin de conectar el comportamiento empírico con una lectura metodológica más sólida.
+          </p>
+        </article>
+
+        <article class="case-box">
+          <h3>6. Repositorio y notebook</h3>
+          <p>Si quieres profundizar en el procedimiento, aquí están el código y el cuaderno de trabajo.</p>
+          <div class="case-links">
+            <a class="case-link" href="https://github.com/tuusuario/tu-repo" target="_blank" rel="noopener noreferrer">
+              Ver código en GitHub
+            </a>
+            <a class="case-link" href="SMOTE_MLP_Estudio_v2.ipynb" target="_blank" rel="noopener noreferrer">
+              Abrir notebook
+            </a>
           </div>
-        </div>
+        </article>
       </div>
     </div>
   </div>
 </section>
-
 <!-- EDUCACIÓN & CERTIFICACIONES -->
 <section id="educacion">
   <div class="container">
