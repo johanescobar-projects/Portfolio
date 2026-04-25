@@ -35,7 +35,7 @@ body { font-family: var(--sans); background: var(--bg); color: var(--text); font
 body::before {
   content: '';
   position: fixed; inset: 0; pointer-events: none; z-index: 999;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves=[...]
   opacity: 0.4;
 }
 
@@ -89,7 +89,7 @@ nav {
   background-size: 40px 40px;
 }
 .hero-inner {
-  position: relative; z-index: 1; max-width: 780px; width: 100%;
+  position: relative; z-index: 1; max-width: 1000px; width: 100%;
 }
 .hero-badge {
   display: inline-flex; align-items: center; gap: 6px;
@@ -117,7 +117,7 @@ nav {
 }
 .hero-sub {
   font-size: 1rem; color: rgba(255,255,255,0.55);
-  max-width: 480px; line-height: 1.75; margin-bottom: 2.5rem;
+  max-width: 580px; line-height: 1.75; margin-bottom: 2.5rem;
   animation: fadeUp 0.6s 0.2s ease both;
 }
 .hero-stats {
@@ -167,7 +167,7 @@ nav {
 
 /* ─── SECTIONS ───────────────────────────────────────────── */
 section { padding: 4.5rem 2.5rem; }
-.container { max-width: 860px; margin: 0 auto; }
+.container { max-width: 1000px; margin: 0 auto; }
 .sec-label {
   font-family: var(--mono); font-size: 0.72rem; font-weight: 500;
   color: var(--lavender); letter-spacing: 0.14em; text-transform: uppercase;
@@ -495,9 +495,9 @@ footer a:hover { color: var(--accent); }
     <div class="divider"></div>
     <div class="about-layout">
       <div class="about-text">
-        <p>Estadístico en formación con experiencia en análisis cuantitativo, modelación estadística predictiva y visualización de datos. Manejo Python, R, SQL y Excel avanzado orientado a la toma de decisiones basada en datos.</p>
-        <p>Me interesa especialmente el uso de métodos estadísticos rigurosos para el análisis de fenómenos sociales, riesgo financiero y la evaluación formal de modelos de machine learning.</p>
-        <p>Actualmente me desempeño como Practicante de Actuaría en <strong>MetLife Colombia</strong>, mientras desarrollo una pasantía de investigación sobre clasificación supervisada en el <strong>Semillero SIMODEST</strong>, bajo la dirección del Profesor Manuel Francisco Romero Ospina.</p>
+        <p>Estadístico en formación con experiencia en análisis cuantitativo, modelación estadística predictiva y visualización de datos. Manejo Python, R, SQL y Excel avanzado orientado a [...]
+        <p>Me interesa especialmente el uso de métodos estadísticos rigurosos para el análisis de fenómenos sociales, riesgo financiero y la evaluación formal de modelos de machine learning.[...]
+        <p>Actualmente me desempeño como Practicante de Actuaría en <strong>MetLife Colombia</strong>, mientras desarrollo una pasantía de investigación sobre clasificación supervisada en el[...]
         <div class="contact-row">
           <a class="contact-chip" href="mailto:johanescobar770@gmail.com">✉ johanescobar770@gmail.com</a>
           <span class="contact-chip">📍 Bogotá, Colombia</span>
@@ -542,38 +542,38 @@ footer a:hover { color: var(--accent); }
 
     <div class="tab-panel active" id="tab-all">
       <div class="skills-grid">
-        <div class="skill-card"><span class="skill-card-icon">🐍</span><h3>Python</h3><div class="tag-list"><span class="tag">pandas</span><span class="tag">numpy</span><span class="tag">matplotlib</span><span class="tag">seaborn</span><span class="tag">scikit-learn</span><span class="tag">imbalanced-learn</span></div></div>
-        <div class="skill-card"><span class="skill-card-icon">📊</span><h3>R / RStudio</h3><div class="tag-list"><span class="tag">tidyverse</span><span class="tag">ggplot2</span><span class="tag">dplyr</span><span class="tag">caret</span><span class="tag">Shiny</span></div></div>
-        <div class="skill-card"><span class="skill-card-icon">🗄️</span><h3>Bases de datos</h3><div class="tag-list"><span class="tag">SQL</span><span class="tag">PostgreSQL</span><span class="tag">Excel avanzado</span><span class="tag">Tableau</span></div></div>
-        <div class="skill-card"><span class="skill-card-icon">🤖</span><h3>ML & Modelado</h3><div class="tag-list"><span class="tag">Redes neuronales</span><span class="tag">SMOTE</span><span class="tag">Clasificación</span><span class="tag">Regresión</span><span class="tag">Validación cruzada</span></div></div>
-        <div class="skill-card"><span class="skill-card-icon">📐</span><h3>Estadística</h3><div class="tag-list"><span class="tag">Probabilidad</span><span class="tag">Inferencia</span><span class="tag">Multivariado</span><span class="tag">Series de tiempo</span><span class="tag">Muestreo</span></div></div>
-        <div class="skill-card"><span class="skill-card-icon">💡</span><h3>Competencias blandas</h3><div class="tag-list"><span class="tag">Comunicación técnica</span><span class="tag">Aprendizaje autónomo</span><span class="tag">Pensamiento analítico</span><span class="tag">Trabajo en equipo</span></div></div>
+        <div class="skill-card"><span class="skill-card-icon">🐍</span><h3>Python</h3><div class="tag-list"><span class="tag">pandas</span><span class="tag">numpy</span><span class="tag">matplo[...]
+        <div class="skill-card"><span class="skill-card-icon">📊</span><h3>R / RStudio</h3><div class="tag-list"><span class="tag">tidyverse</span><span class="tag">ggplot2</span><span class="t[...]
+        <div class="skill-card"><span class="skill-card-icon">🗄️</span><h3>Bases de datos</h3><div class="tag-list"><span class="tag">SQL</span><span class="tag">PostgreSQL</span><span class[...]
+        <div class="skill-card"><span class="skill-card-icon">🤖</span><h3>ML & Modelado</h3><div class="tag-list"><span class="tag">Redes neuronales</span><span class="tag">SMOTE</span><span c[...]
+        <div class="skill-card"><span class="skill-card-icon">📐</span><h3>Estadística</h3><div class="tag-list"><span class="tag">Probabilidad</span><span class="tag">Inferencia</span><span c[...]
+        <div class="skill-card"><span class="skill-card-icon">💡</span><h3>Competencias blandas</h3><div class="tag-list"><span class="tag">Comunicación técnica</span><span class="tag">Aprend[...]
       </div>
     </div>
 
     <div class="tab-panel" id="tab-ds">
       <div class="skills-grid">
-        <div class="skill-card"><span class="skill-card-icon">🐍</span><h3>Python para Data Science</h3><div class="tag-list"><span class="tag">pandas</span><span class="tag">numpy</span><span class="tag">matplotlib</span><span class="tag">seaborn</span><span class="tag">plotly</span></div></div>
-        <div class="skill-card"><span class="skill-card-icon">🗄️</span><h3>Datos & Consultas</h3><div class="tag-list"><span class="tag">SQL</span><span class="tag">PostgreSQL</span><span class="tag">ETL básico</span><span class="tag">limpieza de datos</span></div></div>
-        <div class="skill-card"><span class="skill-card-icon">📈</span><h3>Visualización</h3><div class="tag-list"><span class="tag">Tableau</span><span class="tag">ggplot2</span><span class="tag">matplotlib</span><span class="tag">PowerPoint avanzado</span></div></div>
-        <div class="skill-card"><span class="skill-card-icon">🔍</span><h3>Análisis estadístico</h3><div class="tag-list"><span class="tag">Regresión</span><span class="tag">Clustering</span><span class="tag">Análisis multivariado</span><span class="tag">Pruebas de hipótesis</span></div></div>
+        <div class="skill-card"><span class="skill-card-icon">🐍</span><h3>Python para Data Science</h3><div class="tag-list"><span class="tag">pandas</span><span class="tag">numpy</span><span [...]
+        <div class="skill-card"><span class="skill-card-icon">🗄️</span><h3>Datos & Consultas</h3><div class="tag-list"><span class="tag">SQL</span><span class="tag">PostgreSQL</span><span cl[...]
+        <div class="skill-card"><span class="skill-card-icon">📈</span><h3>Visualización</h3><div class="tag-list"><span class="tag">Tableau</span><span class="tag">ggplot2</span><span class="[...]
+        <div class="skill-card"><span class="skill-card-icon">🔍</span><h3>Análisis estadístico</h3><div class="tag-list"><span class="tag">Regresión</span><span class="tag">Clustering</span[...]
       </div>
     </div>
 
     <div class="tab-panel" id="tab-ml">
       <div class="skills-grid">
-        <div class="skill-card"><span class="skill-card-icon">🧠</span><h3>Clasificación supervisada</h3><div class="tag-list"><span class="tag">MLP</span><span class="tag">Random Forest</span><span class="tag">Regresión logística</span><span class="tag">SVM</span></div></div>
-        <div class="skill-card"><span class="skill-card-icon">⚖️</span><h3>Datos desbalanceados</h3><div class="tag-list"><span class="tag">SMOTE</span><span class="tag">Borderline-SMOTE</span><span class="tag">ADASYN</span><span class="tag">imbalanced-learn</span></div></div>
-        <div class="skill-card"><span class="skill-card-icon">📏</span><h3>Evaluación de modelos</h3><div class="tag-list"><span class="tag">PR-AUC</span><span class="tag">ROC-AUC</span><span class="tag">F1-Score</span><span class="tag">Índice de Youden</span><span class="tag">G-mean</span></div></div>
-        <div class="skill-card"><span class="skill-card-icon">🔧</span><h3>Ingeniería ML</h3><div class="tag-list"><span class="tag">scikit-learn</span><span class="tag">Pipelines</span><span class="tag">Early stopping</span><span class="tag">Regularización L2</span></div></div>
+        <div class="skill-card"><span class="skill-card-icon">🧠</span><h3>Clasificación supervisada</h3><div class="tag-list"><span class="tag">MLP</span><span class="tag">Random Forest</span[...]
+        <div class="skill-card"><span class="skill-card-icon">⚖️</span><h3>Datos desbalanceados</h3><div class="tag-list"><span class="tag">SMOTE</span><span class="tag">Borderline-SMOTE</spa[...]
+        <div class="skill-card"><span class="skill-card-icon">📏</span><h3>Evaluación de modelos</h3><div class="tag-list"><span class="tag">PR-AUC</span><span class="tag">ROC-AUC</span><span [...]
+        <div class="skill-card"><span class="skill-card-icon">🔧</span><h3>Ingeniería ML</h3><div class="tag-list"><span class="tag">scikit-learn</span><span class="tag">Pipelines</span><span [...]
       </div>
     </div>
 
     <div class="tab-panel" id="tab-actuaria">
       <div class="skills-grid">
-        <div class="skill-card"><span class="skill-card-icon">🏦</span><h3>Reservas técnicas</h3><div class="tag-list"><span class="tag">Índice IPC</span><span class="tag">UVR</span><span class="tag">Control de capital</span><span class="tag">Normativa SFC</span></div></div>
-        <div class="skill-card"><span class="skill-card-icon">📋</span><h3>Reportería financiera</h3><div class="tag-list"><span class="tag">Excel avanzado</span><span class="tag">Macros VBA</span><span class="tag">Archivos planos</span><span class="tag">Conciliación</span></div></div>
-        <div class="skill-card"><span class="skill-card-icon">📜</span><h3>Regulatorio</h3><div class="tag-list"><span class="tag">Transmisión SFC</span><span class="tag">Integridad de datos</span><span class="tag">Cumplimiento normativo</span></div></div>
+        <div class="skill-card"><span class="skill-card-icon">🏦</span><h3>Reservas técnicas</h3><div class="tag-list"><span class="tag">Índice IPC</span><span class="tag">UVR</span><span cla[...]
+        <div class="skill-card"><span class="skill-card-icon">📋</span><h3>Reportería financiera</h3><div class="tag-list"><span class="tag">Excel avanzado</span><span class="tag">Macros VBA</[...]
+        <div class="skill-card"><span class="skill-card-icon">📜</span><h3>Regulatorio</h3><div class="tag-list"><span class="tag">Transmisión SFC</span><span class="tag">Integridad de datos</[...]
       </div>
     </div>
   </div>
@@ -601,7 +601,7 @@ footer a:hover { color: var(--accent); }
         <div class="timeline-title">Pasante de Investigación — Machine Learning</div>
         <div class="timeline-org">Semillero SIMODEST · Fundación Universitaria Los Libertadores</div>
         <ul class="timeline-bullets">
-          <li>Investigación sobre el efecto de SMOTE y variantes en clasificación supervisada con datos desbalanceados en escenarios de riesgo crediticio, deserción escolar y fraude bancario.</li>
+          <li>Investigación sobre el efecto de SMOTE y variantes en clasificación supervisada con datos desbalanceados en escenarios de riesgo crediticio, deserción escolar y fraude bancario.<[...]
           <li>Implementación de pipelines de preprocesamiento y evaluación de modelos en Python con scikit-learn e imbalanced-learn.</li>
           <li>Optimización de umbrales de decisión y evaluación avanzada mediante PR-AUC, F1-Score e índice de Youden.</li>
           <li>Verificación numérica de proposiciones matemáticas sobre distribución de puntos sintéticos generados por SMOTE.</li>
@@ -639,7 +639,7 @@ footer a:hover { color: var(--accent); }
         <div class="case-cols">
           <div class="case-box">
             <h3>Objetivo</h3>
-            <p>Aislar y medir el efecto diferencial de cada variante de SMOTE sobre el rendimiento de una MLP, manteniendo arquitectura, hiperparámetros y semilla constantes. No se busca maximizar métricas sino explicar causas.</p>
+            <p>Aislar y medir el efecto diferencial de cada variante de SMOTE sobre el rendimiento de una MLP, manteniendo arquitectura, hiperparámetros y semilla constantes. No se busca maximiz[...]
           </div>
           <div class="case-box">
             <h3>Diseño experimental</h3>
@@ -675,7 +675,7 @@ footer a:hover { color: var(--accent); }
           </div>
           <div class="case-box">
             <h3>Proposiciones matemáticas</h3>
-            <p>Se verifican numéricamente tres proposiciones sobre el valor esperado, la dispersión y la sensibilidad paramétrica de los puntos sintéticos (Elreedy & Atiya, 2019). Diferencia máxima observada vs. teoría: &lt;0.01.</p>
+            <p>Se verifican numéricamente tres proposiciones sobre el valor esperado, la dispersión y la sensibilidad paramétrica de los puntos sintéticos (Elreedy & Atiya, 2019). Diferencia [...]
           </div>
           <div class="case-box">
             <h3>Hallazgos clave</h3>
@@ -691,7 +691,7 @@ footer a:hover { color: var(--accent); }
 
       <div class="case-footer">
         <a class="case-link case-link-primary" href="https://github.com/tuusuario/smote-mlp-estudio" target="_blank">⟐ Repositorio GitHub</a>
-        <a class="case-link case-link-secondary" href="https://colab.research.google.com/github/tuusuario/smote-mlp-estudio/blob/main/SMOTE_MLP_Estudio_v2.ipynb" target="_blank">▶ Abrir en Colab</a>
+        <a class="case-link case-link-secondary" href="https://colab.research.google.com/github/tuusuario/smote-mlp-estudio/blob/main/SMOTE_MLP_Estudio_v2.ipynb" target="_blank">▶ Abrir en Cola[...]
         <a class="case-link case-link-secondary" href="SMOTE_MLP_Estudio_v2.ipynb" target="_blank">↓ Descargar notebook</a>
       </div>
     </div>
