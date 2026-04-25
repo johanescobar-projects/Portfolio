@@ -1,4 +1,4 @@
-# SMOTE: Formalización Matemática y Validación Empírica del Sobremuestreo Sintético para el Desbalance de Clases en Machine Learning
+# PROYECTO: Validación empírica del Sobremuestreo sintético para el desbalance de clases en Machine Learning
 
 > **Estudio aplicado sobre SMOTE, Borderline-SMOTE y ADASYN en clasificación desbalanceada con MLP.**
 
