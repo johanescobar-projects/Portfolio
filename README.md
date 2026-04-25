@@ -5,8 +5,6 @@
 **Autor:** Johan Escobar
 **Institución:** Fundación Universitaria Los Libertadores — Bogotá, Colombia  
 **Semillero:** SIMODEST | **Grupo:** GIDAD  
-**Directores:** Manuel Francisco Romero Ospina (director) · Ross Mary Sáenz Lesmes (codirectora)  
-**Categoría:** Proyecto B — I+D+I | **Código:** ID-FT-010, Versión 04 | **Convocatoria:** 2026 | **Duración:** 10 meses
 
 ---
 
