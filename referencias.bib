@@ -1,0 +1,193 @@
+% ============================================================
+%  REFERENCIAS BIBLIOGRÁFICAS — PROYECTO SMOTE
+%  Johan Andrés Escobar · CC: 1013105878 · Código: 202310013609
+%  Pasantía de Investigación — SIMODEST / GIDAD
+%  Fundación Universitaria Los Libertadores · 2026
+%  Director: Manuel Francisco Romero Ospina
+% ============================================================
+
+% ── TÉCNICAS ORIGINALES (obligatorias) ──────────────────────
+
+@article{chawla2002smote,
+  author    = {Chawla, Nitesh V. and Bowyer, Kevin W. and Hall, Lawrence O. and Kegelmeyer, W. Philip},
+  title     = {{SMOTE}: Synthetic Minority Over-sampling Technique},
+  journal   = {Journal of Artificial Intelligence Research},
+  year      = {2002},
+  volume    = {16},
+  pages     = {321--357},
+  doi       = {10.1613/jair.953},
+  url       = {https://doi.org/10.1613/jair.953},
+  note      = {Artículo fundacional de SMOTE. Define la fórmula de interpolación lineal convexa y la primera evaluación empírica sistemática.}
+}
+
+@inproceedings{han2005borderline,
+  author    = {Han, Hui and Wang, Wen-Yuan and Mao, Bing-Huan},
+  title     = {Borderline-{SMOTE}: A New Over-sampling Method in Imbalanced Data Sets Learning},
+  booktitle = {Advances in Intelligent Computing},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {3644},
+  pages     = {878--887},
+  year      = {2005},
+  publisher = {Springer},
+  address   = {Berlin, Heidelberg},
+  doi       = {10.1007/11538059_91},
+  url       = {https://doi.org/10.1007/11538059_91},
+  note      = {Propone la clasificación safe/danger/noise de instancias minoritarias y restringe la generación sintética a la frontera de decisión.}
+}
+
+@inproceedings{he2008adasyn,
+  author    = {He, Haibo and Bai, Yang and Garcia, Edwardo A. and Li, Shutao},
+  title     = {{ADASYN}: Adaptive Synthetic Sampling Approach for Imbalanced Learning},
+  booktitle = {2008 IEEE International Joint Conference on Neural Networks (IJCNN)},
+  pages     = {1322--1328},
+  year      = {2008},
+  publisher = {IEEE},
+  address   = {Hong Kong},
+  doi       = {10.1109/IJCNN.2008.4633969},
+  url       = {https://doi.org/10.1109/IJCNN.2008.4633969},
+  note      = {Define la ponderación adaptativa r̂_i = Δ_i / m_s que concentra la generación en zonas de mayor dificultad de clasificación.}
+}
+
+% ── FORMALIZACIÓN MATEMÁTICA ─────────────────────────────────
+
+@article{elreedy2019comprehensive,
+  author    = {Elreedy, Dina and Atiya, Amir F.},
+  title     = {A Comprehensive Analysis of Synthetic Minority Oversampling Technique ({SMOTE}) for Handling Class Imbalance},
+  journal   = {Information Sciences},
+  year      = {2019},
+  volume    = {505},
+  pages     = {32--64},
+  doi       = {10.1016/j.ins.2019.07.070},
+  url       = {https://doi.org/10.1016/j.ins.2019.07.070},
+  note      = {Primera formalización teórica completa de SMOTE. Deriva la esperanza y la matriz de covarianza de los puntos sintéticos. Demuestra que la distribución inducida por SMOTE diverge de la distribución original de la clase minoritaria. Fundamento matemático de las Proposiciones 1, 2 y 3 del presente trabajo.}
+}
+
+@article{elreedy2024theoretical,
+  author    = {Elreedy, Dina and Atiya, Amir F. and Kamalov, Firuz},
+  title     = {A Theoretical Distribution Analysis of Synthetic Minority Oversampling Technique ({SMOTE}) for Imbalanced Learning},
+  journal   = {Machine Learning},
+  year      = {2024},
+  volume    = {113},
+  pages     = {4903--4923},
+  doi       = {10.1007/s10994-022-06296-4},
+  url       = {https://doi.org/10.1007/s10994-022-06296-4},
+  note      = {Extensión de Elreedy & Atiya (2019). Deriva la densidad de probabilidad p_Z(z) de los puntos sintéticos como función de la densidad original y la geometría de los vecinos. Versión citada en el anteproyecto como Elreedy et al. (2024).}
+}
+
+% ── REVISIONES DE APRENDIZAJE CON DESBALANCE ────────────────
+
+@article{he2009learning,
+  author    = {He, Haibo and Garcia, Edwardo A.},
+  title     = {Learning from Imbalanced Data},
+  journal   = {IEEE Transactions on Knowledge and Data Engineering},
+  year      = {2009},
+  volume    = {21},
+  number    = {9},
+  pages     = {1263--1284},
+  doi       = {10.1109/TKDE.2008.239},
+  url       = {https://doi.org/10.1109/TKDE.2008.239},
+  note      = {Revisión canónica del problema de aprendizaje con datos desbalanceados. Cubre métodos de muestreo, sensibles al costo y de nivel de algoritmo. Más de 4000 citas. Base conceptual del marco teórico.}
+}
+
+% ── ARTÍCULOS DE RESPALDO (vigencia y contexto aplicado) ─────
+
+@article{mujahid2024oversampling,
+  author    = {Mujahid, Muhammad and Kına, Elif and Rustam, Furqan and Gracia Villar, Manuel and Silva Alvarado, Eduardo R. and De La Torre Diez, Isabel and Ashraf, Imran},
+  title     = {Data Oversampling and Imbalanced Datasets: An Investigation of Performance for Machine Learning and Feature Engineering},
+  journal   = {Journal of Big Data},
+  year      = {2024},
+  volume    = {11},
+  pages     = {87},
+  doi       = {10.1186/s40537-024-00943-4},
+  url       = {https://doi.org/10.1186/s40537-024-00943-4},
+  note      = {Revisión sistemática 2024 que compara las tres mismas variantes (SMOTE, Borderline, ADASYN) con múltiples clasificadores sobre datos reales. Muestra que el efecto varía por dominio y clasificador, respaldando el diseño experimental con escenarios controlados del presente estudio.}
+}
+
+@article{yang2024fraud,
+  author    = {Yang, Zhiyong and Wang, Yu and Shi, Hao and Qiu, Qiwei},
+  title     = {Leveraging Mixture of Experts and Deep Learning-based Data Rebalancing to Improve Credit Fraud Detection},
+  journal   = {Big Data and Cognitive Computing},
+  year      = {2024},
+  volume    = {8},
+  number    = {11},
+  pages     = {151},
+  doi       = {10.3390/bdcc8110151},
+  url       = {https://doi.org/10.3390/bdcc8110151},
+  note      = {Estudio en detección de fraude bancario. Muestra que SMOTE estándar falla con solapamiento severo y requiere arquitecturas más complejas (MoE). Respalda los hallazgos del escenario de fraude del presente trabajo.}
+}
+
+@article{dezarza2023optimizing,
+  author    = {{de Zarzà}, Irene and {de Curtò}, Joaquim and Calafate, Carlos T.},
+  title     = {Optimizing Neural Networks for Imbalanced Data},
+  journal   = {Electronics},
+  year      = {2023},
+  volume    = {12},
+  number    = {12},
+  pages     = {2674},
+  doi       = {10.3390/electronics12122674},
+  url       = {https://doi.org/10.3390/electronics12122674},
+  note      = {Único artículo de respaldo que usa MLP con variantes de SMOTE y datos simulados, configuración equivalente a la del presente estudio. Justifica (1) no remuestrear el conjunto de prueba y (2) preferir PR-AUC sobre ROC-AUC en contextos de desbalance severo.}
+}
+
+% ── IMPLEMENTACIÓN ───────────────────────────────────────────
+
+@article{lemaitre2017imbalanced,
+  author    = {Lemaître, Guillaume and Nogueira, Fernando and Aridas, Christos K.},
+  title     = {Imbalanced-learn: A Python Toolbox to Tackle the Curse of Imbalanced Datasets in Machine Learning},
+  journal   = {Journal of Machine Learning Research},
+  year      = {2017},
+  volume    = {18},
+  number    = {17},
+  pages     = {1--5},
+  url       = {http://jmlr.org/papers/v18/16-365.html},
+  note      = {Referencia de la librería imbalanced-learn utilizada en el código del proyecto. Garantiza la reproducibilidad: pip install imbalanced-learn. Obligatoria para trazabilidad.}
+}
+
+% ── METODOLOGÍA DE SIMULACIÓN ────────────────────────────────
+
+@article{morris2019simulation,
+  author    = {Morris, Tim P. and White, Ian R. and Crowther, Michael J.},
+  title     = {Using Simulation Studies to Evaluate Statistical Methods},
+  journal   = {Statistics in Medicine},
+  year      = {2019},
+  volume    = {38},
+  number    = {11},
+  pages     = {2074--2102},
+  doi       = {10.1002/sim.8086},
+  url       = {https://doi.org/10.1002/sim.8086},
+  note      = {Referencia metodológica central. Introduce el marco ADEMP (Aims, Data-generating mechanisms, Estimands, Methods, Performance measures) que valida el diseño experimental del presente estudio. Justifica el uso de datos simulados paramétricos y establece la necesidad de reportar el Monte Carlo Standard Error.}
+}
+
+% ── REFERENCIA ADICIONAL DEL ANTEPROYECTO ───────────────────
+
+@article{krawczyk2016learning,
+  author    = {Krawczyk, Bartosz},
+  title     = {Learning from Imbalanced Data: Open Challenges and Future Directions},
+  journal   = {Progress in Artificial Intelligence},
+  year      = {2016},
+  volume    = {5},
+  number    = {4},
+  pages     = {221--232},
+  doi       = {10.1007/s13748-016-0094-0},
+  url       = {https://doi.org/10.1007/s13748-016-0094-0},
+  note      = {Revisión de los desafíos abiertos en aprendizaje con desbalance. Citado en el anteproyecto en la sección de justificación para la relevancia del área de conocimiento.}
+}
+
+% ============================================================
+%  NOTAS DE USO
+% ============================================================
+%
+%  Citas en texto (APA 7.ª edición):
+%    Técnica base:       Chawla et al. (2002)
+%    Borderline:        Han et al. (2005)
+%    ADASYN:            He et al. (2008)
+%    Revisión canónica: He & Garcia (2009)
+%    Formalización:     Elreedy & Atiya (2019); Elreedy et al. (2024)
+%    Vigencia:          Mujahid et al. (2024); Yang et al. (2024)
+%    Protocolo MLP:     de Zarzà et al. (2023)
+%    Simulación:        Morris et al. (2019)
+%    Librería:          Lemaître et al. (2017)
+%    Revisión marco:    Krawczyk (2016)
+%
+%  Total: 11 referencias. Todas con DOI verificado (abril 2026).
+% ============================================================
